@@ -7,17 +7,17 @@ const body = document.getElementById('gradient');
 
 color1.value = '#6A5ACD';
 color2.value = '#32CD32';
-cssCode.textContent = "linear-gradient(to right, slateblue, limegreen);";
+cssCode.innerText = "linear-gradient(to right, slateblue, limegreen);";
 
 
 function changeColor() {
 	body.style.background = `linear-gradient(to right, 
 	${color1.value}, 
-	${color2.value})`;
+	${color2.value});`;
 
-	newBackground = body.style.background + ';';
+	newBackground = body.style.background;
 
-	cssCode.textContent = newBackground;
+	cssCode.innerText = newBackground;
 }
 
 
