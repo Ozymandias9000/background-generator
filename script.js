@@ -15,7 +15,7 @@ function changeColor() {
 	${color1.value}, 
 	${color2.value})`;
 
-	newBackground = body.style.background.slice(17, -20) + ';';
+	newBackground = body.style.background + ';';
 
 	cssCode.textContent = newBackground;
 }
